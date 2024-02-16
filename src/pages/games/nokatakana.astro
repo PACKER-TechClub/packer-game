@@ -1,0 +1,19 @@
+---
+import dataset from "../../../public/nokatakana.json"
+import OdaiSelector from "../../components/OdaiSelector.jsx"
+---
+
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<h1>カタカナ禁止</h1>
+		<OdaiSelector OdaiList={dataset} client:load/>
+		<button onclick="history.back()">戻る</button>
+	</body>
+</html>
