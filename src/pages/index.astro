@@ -1,19 +1,19 @@
----
----
-
+<!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<div class="">Packer</div>
-		<div class="">
-			<button type="button" class="" onclick="location.href='./games/rakinator'">逆アキネーター</button>
-			<button type="button" class="" onclick="location.href='./games/nokatakana'">カタカナ禁止</button>
-		</div>
-	</body>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Astro</title>
+</head>
+<body class="bg-orange-100 font-semibold mt-20">
+    <div class="text-center flex flex-col justify-between items-center ">
+        <img src="../../public/images/packer.png" alt="PACKER" class="mx-auto h-auto w-1/5">
+        <div class="space-y-4 mt-8">
+            <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="location.href='./games/rakinator'">逆アキネーター</button>
+            <button type="button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onclick="location.href='./games/nokatakana'">カタカナ禁止</button>
+        </div>
+    </div>
+</body>
 </html>
