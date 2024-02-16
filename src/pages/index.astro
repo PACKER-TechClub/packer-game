@@ -1,4 +1,5 @@
 ---
+import image from "../../public/images/packer.png?url";
 ---
 
 <html lang="ja">
@@ -11,7 +12,7 @@
 </head>
 <body class="bg-orange-100 font-semibold mt-20">
     <div class="text-center flex flex-col justify-between items-center ">
-        <img src="../../public/images/packer.png" alt="PACKER" class="mx-auto h-auto w-1/5">
+        <img src={image} alt="PACKER" class="mx-auto h-auto w-1/5">
         <div class="space-y-4 mt-8">
             <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="location.href='./games/rakinator'">逆アキネーター</button>
             <button type="button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onclick="location.href='./games/nokatakana'">カタカナ・英語禁止</button>
